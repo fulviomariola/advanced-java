@@ -24,7 +24,7 @@ public class App {
 		var sql = "create table if not exists user (id integer primary key, name text not null)";
 		stmt.execute(sql);
 		
-		// invece di inserire stringhe songoli, inserisco i ? ? 
+		// invece di inserire stringhe songoli, inserisco i ? ?    
 		sql = "insert into user (id,name) values (?,?)";
 		var insertStmt = conn.prepareStatement(sql);
 		
