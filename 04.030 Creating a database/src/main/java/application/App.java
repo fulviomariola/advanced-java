@@ -57,9 +57,7 @@ public class App {
 			System.out.println(id + ": " + name);
 		}
 		
-		sql = "drop table user";
-
-		//stmt.execute(sql);
+ 
 		
 		stmt.close();
 		
