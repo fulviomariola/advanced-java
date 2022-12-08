@@ -10,7 +10,7 @@ public class App {
 		// ids più id
 		// names più name
 		int[] ids = {0,1,2};
-		String[] names = {"Suellen","Bobby","Carlo"};
+		String[] names = {"Suellen	","Bobby","Carlo"};
 		
 		Class.forName("com.mysql.jdbc.Driver");
 		
