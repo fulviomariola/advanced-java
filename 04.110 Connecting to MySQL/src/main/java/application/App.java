@@ -36,7 +36,7 @@ public class App {
 		}
 		
 		conn.commit();
-		
+	
 		insertStmt.close();
 		
 //		SOSTITUZIONE CON UN PIU' EFFICIENTE PREPARED STATEMENT
