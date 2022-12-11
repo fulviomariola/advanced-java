@@ -13,7 +13,7 @@ public class App {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		
 		String dbUrl = "jdbc:mysql://localhost:3306/people?serverTimezone=UTC";
-		
+	
 		var conn = DriverManager.getConnection(dbUrl, "root", "hello");
 		
 		var stmt = conn.createStatement();
