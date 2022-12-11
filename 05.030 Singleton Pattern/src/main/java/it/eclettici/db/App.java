@@ -24,7 +24,7 @@ public class App {
 		try {
 			db.disconnect();
 		} catch (SQLException e) {
-			System.out.println("Disconnesso dal database");
+			System.out.println("Disconnessione database");
 		}
 	}
 }
