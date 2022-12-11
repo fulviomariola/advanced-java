@@ -1,6 +1,7 @@
 package it.eclettici.db;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -49,8 +50,28 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public List<User> getall() {
-		// TODO Auto-generated method stub
-		return null;
+		List<User> users = new ArrayList<>();
+		
+		var conn = Database.instance().getConnection();
+		
+		try {
+			var stmt = conn.createStatement();
+						
+			var rs = stmt.executeQuery("SELECT id,name FROM user");
+			
+			while(rs.next()) {
+				var id = rs.getInt("id");
+				var name = rs.getString("name");
+				
+				users.add(new User(id,name));
+			}
+			
+			stmt.close();
+		} catch (SQLException e) {
+			throw new DaoException(e);
+		}		
+		
+		return users;
 	}
 
 }

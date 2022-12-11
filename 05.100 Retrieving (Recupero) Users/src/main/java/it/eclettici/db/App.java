@@ -23,7 +23,11 @@ public class App {
 		UserDao userDao = new UserDaoImpl();
 		
 		//userDao.save(new User("Mars"));
-		userDao.save(new User("Mr. Hyde"));
+		//userDao.save(new User("Mr. Hyde"));
+		
+		var users = userDao.getall();
+		
+		users.forEach(System.out::println);
 		
 		try {
 			db.disconnect();
