@@ -16,8 +16,7 @@ public class MainPanel extends JPanel {
 		var nameLabel = new JLabel("Utente:"); 
 		var namePassword = new JLabel("Password:");
 		
-		var nameField = new JTextField();
-		var passField = new JTextField();
+		var nameField = new JTextField(); 
 		
 		var addButton = new JButton("Save");
 		
