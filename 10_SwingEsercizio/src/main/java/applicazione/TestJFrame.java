@@ -68,6 +68,7 @@ public class TestJFrame extends JFrame {
 		btnNewButton.setBounds(31, 108, 117, 29);
 		contentPane.add(btnNewButton);
 		
+		
 		JButton btnNewButton_1 = new JButton("Reset");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
