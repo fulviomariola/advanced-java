@@ -37,7 +37,7 @@ public class App {
 		var db = Database.instance();
 		try {
 			db.connect(props);
-			System.out.println("Sei Connesso al database!!!");
+			System.out.println("Sei Connesso al database");
 			//return;
 		} catch (SQLException e) {
 			System.out.println("Connessione al database non riuscita");
