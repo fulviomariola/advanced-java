@@ -24,7 +24,7 @@ public class App {
 			var users = gson.fromJson(json, User[].class);
 			
 			for(var user : users) {
-				System.out.println(user);
+				System.out.println(user); 
 			}
 					
 		 } catch (MalformedURLException e) {
