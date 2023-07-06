@@ -21,7 +21,7 @@ public class BookController {
 	
 	@PostMapping("/books")
 	public Book createBook(@RequestBody Book book) {
-		
+		 
 		System.out.println("Creating: " + book);
 		book.setId(7L);
 		return book;
